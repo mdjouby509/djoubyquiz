@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Quiz - Djouby Quiz</title>
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<title>DJOUBY QUIZ PREMIUM</title>
 
 <style>
 
 body{
-font-family:Arial,sans-serif;
 margin:0;
+font-family:Arial,sans-serif;
 background:#f4f4f4;
 }
 
@@ -22,54 +21,39 @@ header{
 background:#0057B8;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
 }
 
 h1{
-margin:0;
+color:#FFD700;
 }
 
-.menu{
-text-align:center;
-padding:20px;
+.hero{
+padding:40px 20px;
 }
 
-.menu button{
-background:#D62828;
-color:white;
-border:none;
-padding:15px 25px;
-margin:8px;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
-}
-
-.matiere{
-display:none;
+.card{
 background:white;
 max-width:900px;
-margin:20px auto;
-padding:25px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.15);
+margin:auto;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,0.15);
 }
 
-.quiz{
-background:#f8f8f8;
-padding:15px;
-margin:15px 0;
-border-radius:8px;
+h2{
+color:#0057B8;
 }
 
-.retour{
+.btn{
 display:inline-block;
-margin:20px;
-background:#0057B8;
+padding:15px 25px;
+background:#D62828;
 color:white;
-padding:12px 20px;
 text-decoration:none;
-border-radius:8px;
+border-radius:10px;
+font-weight:bold;
+margin-top:10px;
 }
 
 .whatsapp{
@@ -79,14 +63,16 @@ right:20px;
 width:70px;
 height:70px;
 background:#25D366;
+color:white;
 border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
-color:white;
-font-size:38px;
+font-size:30px;
 text-decoration:none;
-z-index:999;
+font-weight:bold;
+z-index:9999;
+box-shadow:0 4px 15px rgba(0,0,0,0.4);
 }
 
 .tiktok{
@@ -96,14 +82,28 @@ right:20px;
 width:70px;
 height:70px;
 background:black;
+color:white;
 border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
-color:white;
-font-size:35px;
+font-size:28px;
 text-decoration:none;
-z-index:999;
+font-weight:bold;
+z-index:9999;
+box-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+ul{
+line-height:2;
+}
+
+footer{
+background:#0057B8;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
 </style>
@@ -114,173 +114,115 @@ z-index:999;
 
 <header>
 
-<h1>DJOUBY QUIZ</h1>
+<h1>DJOUBY QUIZ PREMIUM</h1>
 
-<p>Choisissez une matière</p>
+<p>Accès réservé aux membres</p>
 
 </header>
 
-<a href="index.html" class="retour">
-← Retour Accueil
+<div class="hero">
+
+<div class="card">
+
+<h2>🚀 Espace Premium</h2>
+
+<p>
+
+Cette section est réservée aux étudiants qui souhaitent accéder aux contenus avancés.
+
+</p>
+
+<ul>
+
+<li>✅ Quiz avancés</li>
+
+<li>✅ Examens complets</li>
+
+<li>✅ Documents PDF</li>
+
+<li>✅ Exercices corrigés</li>
+
+<li>✅ Préparations aux concours</li>
+
+<li>✅ Ressources universitaires</li>
+
+<li>✅ Accompagnement personnalisé</li>
+
+</ul>
+
+<hr>
+
+<h2>📝 Inscription Premium</h2>
+
+<p>
+
+Cliquez sur le bouton ci-dessous pour remplir le formulaire officiel.
+
+</p>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfYNP8IF3GiiiW_etoMjdjIdbIIrlhJ0QS5t_qgmhSOAEdhDw/viewform?usp=publish-editor"
+target="_blank"
+class="btn">
+
+REMPLIR LE FORMULAIRE
+
 </a>
 
-<div class="menu">
+<br><br>
 
-<button onclick="showMatiere('maths')">Mathématiques</button>
+<h2>📱 Besoin d'aide ?</h2>
 
-<button onclick="showMatiere('physique')">Physique</button>
+<p>
 
-<button onclick="showMatiere('chimie')">Chimie</button>
+Contactez directement Djouby Le Mathémagicien.
 
-<button onclick="showMatiere('anglais')">Anglais</button>
+</p>
 
-<button onclick="showMatiere('espagnol')">Espagnol</button>
+<a href="https://wa.me/50947052718"
+target="_blank"
+class="btn">
 
-<button onclick="showMatiere('francais')">Français</button>
+CONTACTER SUR WHATSAPP
 
-</div>
+</a>
 
-<!-- MATHS -->
+<br><br>
 
-<div id="maths" class="matiere">
+<a href="index.html"
+class="btn">
 
-<h2>Quiz de Mathématiques</h2>
+RETOUR À L'ACCUEIL
 
-<div class="quiz">Quiz 1 - Algèbre</div>
-
-<div class="quiz">Quiz 2 - Analyse</div>
-
-<div class="quiz">Quiz 3 - Géométrie</div>
-
-<div class="quiz">Quiz 4 - Probabilités</div>
-
-<div class="quiz">Quiz 5 - Trigonométrie</div>
+</a>
 
 </div>
 
-<!-- PHYSIQUE -->
-
-<div id="physique" class="matiere">
-
-<h2>Quiz de Physique</h2>
-
-<div class="quiz">Quiz 1 - Mécanique</div>
-
-<div class="quiz">Quiz 2 - Électricité</div>
-
-<div class="quiz">Quiz 3 - Thermodynamique</div>
-
-<div class="quiz">Quiz 4 - Ondes</div>
-
-<div class="quiz">Quiz 5 - Physique Moderne</div>
-
 </div>
 
-<!-- CHIMIE -->
+<footer>
 
-<div id="chimie" class="matiere">
+DJOUBY QUIZ PREMIUM © 2026
 
-<h2>Quiz de Chimie</h2>
-
-<div class="quiz">Quiz 1 - Atomistique</div>
-
-<div class="quiz">Quiz 2 - Réactions chimiques</div>
-
-<div class="quiz">Quiz 3 - Chimie organique</div>
-
-<div class="quiz">Quiz 4 - Acides et bases</div>
-
-<div class="quiz">Quiz 5 - Solutions</div>
-
-</div>
-
-<!-- ANGLAIS -->
-
-<div id="anglais" class="matiere">
-
-<h2>Quiz d'Anglais</h2>
-
-<div class="quiz">Quiz 1 - Grammar</div>
-
-<div class="quiz">Quiz 2 - Vocabulary</div>
-
-<div class="quiz">Quiz 3 - Verbs</div>
-
-<div class="quiz">Quiz 4 - Reading</div>
-
-<div class="quiz">Quiz 5 - Writing</div>
-
-</div>
-
-<!-- ESPAGNOL -->
-
-<div id="espagnol" class="matiere">
-
-<h2>Quiz d'Espagnol</h2>
-
-<div class="quiz">Quiz 1 - Gramática</div>
-
-<div class="quiz">Quiz 2 - Verbos</div>
-
-<div class="quiz">Quiz 3 - Lectura</div>
-
-<div class="quiz">Quiz 4 - Vocabulario</div>
-
-<div class="quiz">Quiz 5 - Escritura</div>
-
-</div>
-
-<!-- FRANCAIS -->
-
-<div id="francais" class="matiere">
-
-<h2>Quiz de Français</h2>
-
-<div class="quiz">Quiz 1 - Grammaire</div>
-
-<div class="quiz">Quiz 2 - Conjugaison</div>
-
-<div class="quiz">Quiz 3 - Orthographe</div>
-
-<div class="quiz">Quiz 4 - Vocabulaire</div>
-
-<div class="quiz">Quiz 5 - Littérature</div>
-
-</div>
+</footer>
 
 <a
 class="whatsapp"
 href="https://wa.me/50947052718"
 target="_blank">
 
-<i class="fab fa-whatsapp"></i>
+💬
 
 </a>
 
 <a
 class="tiktok"
-href="https://www.tiktok.com/@mathemagicien509?is_from_webapp=1&sender_device=pc"
+href="https://www.tiktok.com"
 target="_blank">
 
-<i class="fab fa-tiktok"></i>
+TT
 
 </a>
 
-<script>
-
-function showMatiere(id){
-
-let sections=document.querySelectorAll('.matiere');
-
-sections.forEach(section=>{
-section.style.display='none';
-});
-
-document.getElementById(id).style.display='block';
-
-}
-
-</script>
-
 </body>
+
 </html>
