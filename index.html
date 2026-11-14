@@ -3,100 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Djouby Le Mathémagicien</title>
+<title>DJOUBY QUIZ</title>
 
 <style>
-body{ 
-font-family:Arial,sans-serif;
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
 margin:0;
-padding:0;
+font-family:Arial,sans-serif;
 background:#f5f5f5;
 }
 
 header{
 background:#0057B8;
 color:white;
-padding:20px;
+padding:40px 20px;
 text-align:center;
 }
 
 .logo{
-color:#FFD700;
-font-size:40px;
+font-size:50px;
 font-weight:bold;
+color:#FFD700;
+}
+
+.slogan{
+font-size:20px;
 }
 
 nav{
 background:#D62828;
-padding:10px;
 text-align:center;
+padding:15px;
+position:sticky;
+top:0;
+z-index:100;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:15px;
+margin:10px;
 font-weight:bold;
 }
 
 .hero{
-padding:50px;
-text-align:center;
 background:#FFD700;
+text-align:center;
+padding:80px 20px;
 }
 
 .hero h1{
 color:#0057B8;
+font-size:40px;
 }
 
 .btn{
-padding:15px 30px;
 background:#D62828;
 color:white;
+padding:15px 30px;
+border-radius:8px;
 text-decoration:none;
-border-radius:5px;
-font-size:18px;
+display:inline-block;
+margin-top:20px;
 }
 
 .section{
-padding:40px;
-text-align:center;
+padding:50px 15px;
 }
 
 .card{
 background:white;
-padding:20px;
+max-width:900px;
 margin:20px auto;
-max-width:500px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+padding:25px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+h2{
+color:#0057B8;
+}
+
+input, select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+}
+
+button{
+background:#D62828;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
 }
 
 footer{
 background:#0057B8;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
+margin-top:30px;
 }
-</style>.whatsapp-float{
+
+.whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
-width:60px;
-height:60px;
+width:65px;
+height:65px;
 background:#25D366;
-color:white;
 border-radius:50%;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
+font-size:34px;
 text-decoration:none;
-font-size:30px;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
+box-shadow:0 0 10px rgba(0,0,0,0.4);
 z-index:999;
 }
 
+.tiktok{
+position:fixed;
+bottom:95px;
+right:20px;
+width:65px;
+height:65px;
+background:black;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.4);
+z-index:999;
+}
+
+</style>
 </head>
+
+<body>
+
+<header>
+
+<div class="logo">DJOUBY QUIZ</div>
+
+<p class="slogan">Le Mathémagicien</p>
+
+</header>
+
+<nav>
+
+<a href="#apropos">À propos</a>
+
+<a href="#inscription">Inscription</a>
+
+<a href="#maths">Mathématiques</a>
+
+<a href="#physique">Physique</a>
+
+<a href="#examens">Examens</a>
+
+<a href="#livres">Livres</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Bienvenue sur DJOUBY QUIZ</h1>
+
+<p>
+Mathématiques • Physique • Examens • Exercices • Réussite
+</p>
+
+<a href="#inscription" class="btn">
+S'inscrire
+</a>
+
+</section>
+
+<section id="apropos" class="section">
+
 <div class="card">
 
 <h2>À propos de moi</h2>
@@ -105,115 +200,44 @@ z-index:999;
 
 Je suis Djouby, étudiant en Physique à l'Université d'État d'Haïti (UEH), plus précisément à l'École Normale Supérieure (ENS).
 
-Passionné par les mathématiques, la physique et l'enseignement, je partage mes connaissances à travers des documents, des exercices, des quiz et des contenus éducatifs.
+Passionné par les mathématiques, la physique et l'enseignement, je partage mes connaissances à travers des quiz, exercices, examens et contenus pédagogiques.
 
-Je suis également auteur d'un ouvrage destiné aux postulants et aux étudiants souhaitant renforcer leurs bases scientifiques.
+Je suis également auteur d'un ouvrage destiné aux postulants souhaitant renforcer leurs bases scientifiques.
 
-Mon objectif est d'aider les jeunes à développer leurs compétences académiques et à réussir leurs études.
+Mon objectif est d'aider les élèves et étudiants à développer leurs compétences académiques et réussir leurs études.
 
 </p>
 
 </div>
-<body>
-<a href="https://wa.me/50947052718"
-class="whatsapp-float">
-📱
-</a>
-<header>
-<div class="logo">DJOUBY QUIZ</div>
-<p>Le Mathémagicien</p>
-</header>
 
-<nav>
-<a href="#">Accueil</a>
-<a href="#">Mathématiques</a>
-<a href="#">Physique</a>
-<a href="#">Classement</a>
-<a href="#">Contact</a>
-</nav>
+</section>
 
-<div class="hero">
-<h1>Bienvenue sur Djouby Quiz</h1>
-<p>Testez vos connaissances et développez votre intelligence.</p>
-<a class="btn" href="#">Commencer</a>
-</div>
+<section id="inscription" class="section">
 
-<div class="section">
-
-<div class="card">
-<h2>Quiz de Mathématiques</h2>
-<p>Algèbre, Analyse, Géométrie, Probabilités.</p>
-</div>
-
-<div class="card">
-<h2>Quiz de Physique</h2>
-<p>Mécanique, Ondes, Electricité, Physique moderne.</p>
-</div>
-
-<div class="card">
-<h2>Classement</h2>
-<p>Découvrez les meilleurs participants.</p>
-</div>
-
-</div>
-<div class="card">
-
-<h2>Contact WhatsApp</h2>
-
-<p>Contactez Djouby Le Mathémagicien directement sur WhatsApp.</p>
-
-<a href="https://wa.me/50947052718"
-style="background:green;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:5px;
-display:inline-block;
-font-weight:bold;">
-📱 Écrire sur WhatsApp
-</a>
-
-</div>
-<div class="card">
-
-<h2>Suivez-moi</h2>
-
-<a href="https://www.tiktok.com/@mathemagicien509?is_from_webapp=1&sender_device=pc"
-target="_blank"
-style="background:black;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;">
-🎵 TikTok
-</a>
-
-</div>
-<footer>
-Djouby Le Mathémagicien
-</footer>
 <div class="card">
 
 <h2>Fiche d'inscription</h2>
 
 <form>
 
-<p>Nom complet</p>
-<input type="text" placeholder="Votre nom complet">
+<label>Nom complet</label>
+<input type="text">
 
-<p>Téléphone</p>
-<input type="text" placeholder="Votre téléphone">
+<label>Téléphone</label>
+<input type="text">
 
-<p>Email</p>
-<input type="email" placeholder="Votre email">
+<label>Email</label>
+<input type="email">
 
-<p>Niveau d'étude</p>
-<input type="text" placeholder="Exemple : NS4, Université">
+<label>Niveau d'étude</label>
+<input type="text">
 
-<p>Matière choisie</p>
+<label>Matière choisie</label>
 
 <select>
 <option>Mathématiques</option>
 <option>Physique</option>
 </select>
-
-<br><br>
 
 <button type="submit">
 S'inscrire
@@ -222,33 +246,98 @@ S'inscrire
 </form>
 
 </div>
-  </div>
+
+</section>
+
+<section id="maths" class="section">
 
 <div class="card">
 
 <h2>Quiz de Mathématiques</h2>
 
-<p>Combien vaut 2² + 3² ?</p>
+<p><b>Question 1 :</b> Combien vaut 2² + 3² ?</p>
 
-<input type="radio" name="q1">10<br>
-<input type="radio" name="q1">13<br>
-<input type="radio" name="q1">15<br>
+<input type="radio">10<br>
+<input type="radio">13<br>
+<input type="radio">15<br>
+
+<br>
+
+<p><b>Question 2 :</b> Combien vaut √25 ?</p>
+
+<input type="radio">4<br>
+<input type="radio">5<br>
+<input type="radio">6<br>
 
 </div>
+
+</section>
+
+<section id="physique" class="section">
 
 <div class="card">
 
 <h2>Quiz de Physique</h2>
 
-<p>Unité de la force ?</p>
+<p><b>Question 1 :</b> Unité de la force ?</p>
 
-<input type="radio" name="q2">Joule<br>
-<input type="radio" name="q2">Watt<br>
-<input type="radio" name="q2">Newton<br>
+<input type="radio"> Joule<br>
+<input type="radio"> Watt<br>
+<input type="radio"> Newton<br>
+
+<br>
+
+<p><b>Question 2 :</b> Vitesse de la lumière ?</p>
+
+<input type="radio">300 km/s<br>
+<input type="radio">30000 km/s<br>
+<input type="radio">300000 km/s<br>
 
 </div>
 
-</body>
-</html>
+</section>
+
+<section id="examens" class="section">
+
+<div class="card">
+
+<h2>Partie Examens</h2>
+
+<p>
+
+Vous pourrez bientôt passer des examens de mathématiques et de physique directement sur cette plateforme.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="livres" class="section">
+
+<div class="card">
+
+<h2>Mes Livres</h2>
+
+<p>
+
+Retrouvez ici mes ouvrages, exercices et documents destinés aux postulants ainsi qu'aux étudiants.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+DJOUBY QUIZ | Djouby Le Mathémagicien
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/50947052718">📱</a>
+
+<a class="tiktok" href="https://www.tiktok.com/@mathemagicien509">🎵</a>
+
 </body>
 </html>
