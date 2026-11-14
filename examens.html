@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Examens - Djouby Quiz</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#0057B8;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.menu{
+text-align:center;
+padding:20px;
+}
+
+.menu button{
+background:#D62828;
+color:white;
+border:none;
+padding:15px 25px;
+margin:6px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.matiere{
+display:none;
+background:white;
+max-width:900px;
+margin:20px auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+.examen{
+background:#f8f8f8;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+border-left:5px solid #0057B8;
+}
+
+.retour{
+display:inline-block;
+margin:20px;
+background:#0057B8;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:8px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:38px;
+color:white;
+text-decoration:none;
+z-index:999;
+}
+
+.tiktok{
+position:fixed;
+bottom:100px;
+right:20px;
+width:70px;
+height:70px;
+background:black;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:35px;
+color:white;
+text-decoration:none;
+z-index:999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>DJOUBY EXAMENS</h1>
+
+<p>Choisissez une matière</p>
+
+</header>
+
+<a href="index.html" class="retour">
+← Retour Accueil
+</a>
+
+<div class="menu">
+
+<button onclick="showExam('maths')">Mathématiques</button>
+
+<button onclick="showExam('physique')">Physique</button>
+
+<button onclick="showExam('chimie')">Chimie</button>
+
+<button onclick="showExam('anglais')">Anglais</button>
+
+<button onclick="showExam('espagnol')">Espagnol</button>
+
+<button onclick="showExam('francais')">Français</button>
+
+</div>
+
+<div id="maths" class="matiere">
+
+<h2>Examens de Mathématiques</h2>
+
+<div class="examen">Examen 1 - Algèbre</div>
+
+<div class="examen">Examen 2 - Analyse</div>
+
+<div class="examen">Examen 3 - Géométrie</div>
+
+<div class="examen">Examen 4 - Probabilités</div>
+
+<div class="examen">Examen 5 - Trigonométrie</div>
+
+</div>
+
+<div id="physique" class="matiere">
+
+<h2>Examens de Physique</h2>
+
+<div class="examen">Examen 1 - Mécanique</div>
+
+<div class="examen">Examen 2 - Électricité</div>
+
+<div class="examen">Examen 3 - Thermodynamique</div>
+
+<div class="examen">Examen 4 - Ondes</div>
+
+<div class="examen">Examen 5 - Physique Moderne</div>
+
+</div>
+
+<div id="chimie" class="matiere">
+
+<h2>Examens de Chimie</h2>
+
+<div class="examen">Examen 1 - Atomistique</div>
+
+<div class="examen">Examen 2 - Réactions chimiques</div>
+
+<div class="examen">Examen 3 - Chimie organique</div>
+
+<div class="examen">Examen 4 - Acides et Bases</div>
+
+<div class="examen">Examen 5 - Solutions</div>
+
+</div>
+
+<div id="anglais" class="matiere">
+
+<h2>Examens d'Anglais</h2>
+
+<div class="examen">Examen 1 - Grammar</div>
+
+<div class="examen">Examen 2 - Vocabulary</div>
+
+<div class="examen">Examen 3 - Reading</div>
+
+<div class="examen">Examen 4 - Writing</div>
+
+<div class="examen">Examen 5 - Communication</div>
+
+</div>
+
+<div id="espagnol" class="matiere">
+
+<h2>Examens d'Espagnol</h2>
+
+<div class="examen">Examen 1 - Gramática</div>
+
+<div class="examen">Examen 2 - Verbos</div>
+
+<div class="examen">Examen 3 - Lectura</div>
+
+<div class="examen">Examen 4 - Escritura</div>
+
+<div class="examen">Examen 5 - Conversación</div>
+
+</div>
+
+<div id="francais" class="matiere">
+
+<h2>Examens de Français</h2>
+
+<div class="examen">Examen 1 - Grammaire</div>
+
+<div class="examen">Examen 2 - Conjugaison</div>
+
+<div class="examen">Examen 3 - Orthographe</div>
+
+<div class="examen">Examen 4 - Vocabulaire</div>
+
+<div class="examen">Examen 5 - Littérature</div>
+
+</div>
+
+<a class="whatsapp"
+href="https://wa.me/50947052718"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a class="tiktok"
+href="https://www.tiktok.com"
+target="_blank">
+
+<i class="fab fa-tiktok"></i>
+
+</a>
+
+<script>
+
+function showExam(id){
+
+let sections=document.querySelectorAll('.matiere');
+
+sections.forEach(section=>{
+section.style.display='none';
+});
+
+document.getElementById(id).style.display='block';
+
+}
+
+</script>
+
+</body>
+</html>
