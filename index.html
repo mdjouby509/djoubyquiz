@@ -3,25 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>DJOUBY QUIZ</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
-html{
-scroll-behavior:smooth;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
+background:#f4f4f4;
 }
 
 header{
 background:#0057B8;
-color:white;
-padding:40px 20px;
+padding:30px;
 text-align:center;
+color:white;
 }
 
 .logo{
@@ -31,23 +35,8 @@ color:#FFD700;
 }
 
 .slogan{
+margin-top:10px;
 font-size:20px;
-}
-
-nav{
-background:#D62828;
-text-align:center;
-padding:15px;
-position:sticky;
-top:0;
-z-index:100;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:10px;
-font-weight:bold;
 }
 
 .hero{
@@ -58,50 +47,94 @@ padding:80px 20px;
 
 .hero h1{
 color:#0057B8;
-font-size:40px;
+font-size:45px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
 }
 
 .btn{
+display:inline-block;
 background:#D62828;
 color:white;
 padding:15px 30px;
-border-radius:8px;
 text-decoration:none;
-display:inline-block;
-margin-top:20px;
+border-radius:8px;
+margin:10px;
+font-weight:bold;
 }
 
 .section{
-padding:50px 15px;
+padding:40px 20px;
 }
 
 .card{
 background:white;
-max-width:900px;
-margin:20px auto;
 padding:25px;
+max-width:900px;
+margin:auto;
 border-radius:12px;
 box-shadow:0 0 10px rgba(0,0,0,0.15);
 }
 
-h2{
+.card h2{
 color:#0057B8;
+margin-bottom:20px;
 }
 
-input, select{
-width:100%;
-padding:10px;
-margin-top:5px;
-margin-bottom:15px;
+.navigation{
+text-align:center;
+margin-top:30px;
 }
 
-button{
-background:#D62828;
+.navigation a{
+display:inline-block;
+background:#0057B8;
 color:white;
-border:none;
-padding:12px 20px;
-border-radius:6px;
-cursor:pointer;
+padding:15px 25px;
+margin:10px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:40px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+.tiktok{
+position:fixed;
+bottom:105px;
+right:20px;
+width:70px;
+height:70px;
+background:black;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:35px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
 }
 
 footer{
@@ -109,42 +142,7 @@ background:#0057B8;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:30px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-width:65px;
-height:65px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:34px;
-text-decoration:none;
-box-shadow:0 0 10px rgba(0,0,0,0.4);
-z-index:999;
-}
-
-.tiktok{
-position:fixed;
-bottom:95px;
-right:20px;
-width:65px;
-height:65px;
-background:black;
-color:white;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:30px;
-text-decoration:none;
-box-shadow:0 0 10px rgba(0,0,0,0.4);
-z-index:999;
+margin-top:50px;
 }
 
 </style>
@@ -154,43 +152,33 @@ z-index:999;
 
 <header>
 
-<div class="logo">DJOUBY QUIZ</div>
+<div class="logo">
+DJOUBY QUIZ
+</div>
 
-<p class="slogan">Le Mathémagicien</p>
+<div class="slogan">
+Le Mathémagicien
+</div>
 
 </header>
 
-<nav>
+<div class="hero">
 
-<a href="#apropos">À propos</a>
-
-<a href="#inscription">Inscription</a>
-
-<a href="#maths">Mathématiques</a>
-
-<a href="#physique">Physique</a>
-
-<a href="#examens">Examens</a>
-
-<a href="#livres">Livres</a>
-
-</nav>
-
-<section class="hero">
-
-<h1>Bienvenue sur DJOUBY QUIZ</h1>
+<h1>
+Bienvenue sur DJOUBY QUIZ
+</h1>
 
 <p>
-Mathématiques • Physique • Examens • Exercices • Réussite
+Mathématiques • Physique • Chimie • Anglais • Espagnol • Français
 </p>
 
 <a href="#inscription" class="btn">
 S'inscrire
 </a>
 
-</section>
+</div>
 
-<section id="apropos" class="section">
+<section id="inscription" class="section">
 
 <div class="card">
 
@@ -200,130 +188,45 @@ S'inscrire
 
 Je suis Djouby, étudiant en Physique à l'Université d'État d'Haïti (UEH), plus précisément à l'École Normale Supérieure (ENS).
 
-Passionné par les mathématiques, la physique et l'enseignement, je partage mes connaissances à travers des quiz, exercices, examens et contenus pédagogiques.
+Passionné de mathématiques, de physique et d'enseignement, je mets à disposition des quiz, examens, documents et ressources pédagogiques.
 
-Je suis également auteur d'un ouvrage destiné aux postulants souhaitant renforcer leurs bases scientifiques.
-
-Mon objectif est d'aider les élèves et étudiants à développer leurs compétences académiques et réussir leurs études.
+Je suis également auteur d'un ouvrage destiné aux postulants souhaitant renforcer leurs connaissances scientifiques.
 
 </p>
 
-</div>
+<br>
 
-</section>
-
-<section id="inscription" class="section">
-
-<div class="card">
-
-<h2>Fiche d'inscription</h2>
+<h2>Inscription</h2>
 
 <form>
 
-<label>Nom complet</label>
-<input type="text">
+<input type="text" placeholder="Nom complet"><br><br>
 
-<label>Téléphone</label>
-<input type="text">
+<input type="email" placeholder="Email"><br><br>
 
-<label>Email</label>
-<input type="email">
+<input type="text" placeholder="Téléphone"><br><br>
 
-<label>Niveau d'étude</label>
-<input type="text">
-
-<label>Matière choisie</label>
-
-<select>
-<option>Mathématiques</option>
-<option>Physique</option>
-</select>
-
-<button type="submit">
-S'inscrire
+<button class="btn" type="submit">
+Valider mon inscription
 </button>
 
 </form>
 
 </div>
 
-</section>
+<div class="navigation">
 
-<section id="maths" class="section">
+<a href="quiz.html">
+Quiz
+</a>
 
-<div class="card">
+<a href="documents.html">
+Documents
+</a>
 
-<h2>Quiz de Mathématiques</h2>
-
-<p><b>Question 1 :</b> Combien vaut 2² + 3² ?</p>
-
-<input type="radio">10<br>
-<input type="radio">13<br>
-<input type="radio">15<br>
-
-<br>
-
-<p><b>Question 2 :</b> Combien vaut √25 ?</p>
-
-<input type="radio">4<br>
-<input type="radio">5<br>
-<input type="radio">6<br>
-
-</div>
-
-</section>
-
-<section id="physique" class="section">
-
-<div class="card">
-
-<h2>Quiz de Physique</h2>
-
-<p><b>Question 1 :</b> Unité de la force ?</p>
-
-<input type="radio"> Joule<br>
-<input type="radio"> Watt<br>
-<input type="radio"> Newton<br>
-
-<br>
-
-<p><b>Question 2 :</b> Vitesse de la lumière ?</p>
-
-<input type="radio">300 km/s<br>
-<input type="radio">30000 km/s<br>
-<input type="radio">300000 km/s<br>
-
-</div>
-
-</section>
-
-<section id="examens" class="section">
-
-<div class="card">
-
-<h2>Partie Examens</h2>
-
-<p>
-
-Vous pourrez bientôt passer des examens de mathématiques et de physique directement sur cette plateforme.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="livres" class="section">
-
-<div class="card">
-
-<h2>Mes Livres</h2>
-
-<p>
-
-Retrouvez ici mes ouvrages, exercices et documents destinés aux postulants ainsi qu'aux étudiants.
-
-</p>
+<a href="examens.html">
+Examens
+</a>
 
 </div>
 
@@ -331,13 +234,27 @@ Retrouvez ici mes ouvrages, exercices et documents destinés aux postulants ains
 
 <footer>
 
-DJOUBY QUIZ | Djouby Le Mathémagicien
+DJOUBY QUIZ © 2026
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/50947052718">📱</a>
+<a
+class="whatsapp"
+href="https://wa.me/50947052718"
+target="_blank">
 
-<a class="tiktok" href="https://www.tiktok.com/@mathemagicien509">🎵</a>
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a
+class="tiktok"
+href="https://www.tiktok.com"
+target="_blank">
+
+<i class="fab fa-tiktok"></i>
+
+</a>
 
 </body>
 </html>
