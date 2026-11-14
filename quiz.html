@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz - Djouby Quiz</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#0057B8;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+h1{
+margin:0;
+}
+
+.menu{
+text-align:center;
+padding:20px;
+}
+
+.menu button{
+background:#D62828;
+color:white;
+border:none;
+padding:15px 25px;
+margin:8px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.matiere{
+display:none;
+background:white;
+max-width:900px;
+margin:20px auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+.quiz{
+background:#f8f8f8;
+padding:15px;
+margin:15px 0;
+border-radius:8px;
+}
+
+.retour{
+display:inline-block;
+margin:20px;
+background:#0057B8;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:8px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:38px;
+text-decoration:none;
+z-index:999;
+}
+
+.tiktok{
+position:fixed;
+bottom:100px;
+right:20px;
+width:70px;
+height:70px;
+background:black;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:35px;
+text-decoration:none;
+z-index:999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>DJOUBY QUIZ</h1>
+
+<p>Choisissez une matière</p>
+
+</header>
+
+<a href="index.html" class="retour">
+← Retour Accueil
+</a>
+
+<div class="menu">
+
+<button onclick="showMatiere('maths')">Mathématiques</button>
+
+<button onclick="showMatiere('physique')">Physique</button>
+
+<button onclick="showMatiere('chimie')">Chimie</button>
+
+<button onclick="showMatiere('anglais')">Anglais</button>
+
+<button onclick="showMatiere('espagnol')">Espagnol</button>
+
+<button onclick="showMatiere('francais')">Français</button>
+
+</div>
+
+<!-- MATHS -->
+
+<div id="maths" class="matiere">
+
+<h2>Quiz de Mathématiques</h2>
+
+<div class="quiz">Quiz 1 - Algèbre</div>
+
+<div class="quiz">Quiz 2 - Analyse</div>
+
+<div class="quiz">Quiz 3 - Géométrie</div>
+
+<div class="quiz">Quiz 4 - Probabilités</div>
+
+<div class="quiz">Quiz 5 - Trigonométrie</div>
+
+</div>
+
+<!-- PHYSIQUE -->
+
+<div id="physique" class="matiere">
+
+<h2>Quiz de Physique</h2>
+
+<div class="quiz">Quiz 1 - Mécanique</div>
+
+<div class="quiz">Quiz 2 - Électricité</div>
+
+<div class="quiz">Quiz 3 - Thermodynamique</div>
+
+<div class="quiz">Quiz 4 - Ondes</div>
+
+<div class="quiz">Quiz 5 - Physique Moderne</div>
+
+</div>
+
+<!-- CHIMIE -->
+
+<div id="chimie" class="matiere">
+
+<h2>Quiz de Chimie</h2>
+
+<div class="quiz">Quiz 1 - Atomistique</div>
+
+<div class="quiz">Quiz 2 - Réactions chimiques</div>
+
+<div class="quiz">Quiz 3 - Chimie organique</div>
+
+<div class="quiz">Quiz 4 - Acides et bases</div>
+
+<div class="quiz">Quiz 5 - Solutions</div>
+
+</div>
+
+<!-- ANGLAIS -->
+
+<div id="anglais" class="matiere">
+
+<h2>Quiz d'Anglais</h2>
+
+<div class="quiz">Quiz 1 - Grammar</div>
+
+<div class="quiz">Quiz 2 - Vocabulary</div>
+
+<div class="quiz">Quiz 3 - Verbs</div>
+
+<div class="quiz">Quiz 4 - Reading</div>
+
+<div class="quiz">Quiz 5 - Writing</div>
+
+</div>
+
+<!-- ESPAGNOL -->
+
+<div id="espagnol" class="matiere">
+
+<h2>Quiz d'Espagnol</h2>
+
+<div class="quiz">Quiz 1 - Gramática</div>
+
+<div class="quiz">Quiz 2 - Verbos</div>
+
+<div class="quiz">Quiz 3 - Lectura</div>
+
+<div class="quiz">Quiz 4 - Vocabulario</div>
+
+<div class="quiz">Quiz 5 - Escritura</div>
+
+</div>
+
+<!-- FRANCAIS -->
+
+<div id="francais" class="matiere">
+
+<h2>Quiz de Français</h2>
+
+<div class="quiz">Quiz 1 - Grammaire</div>
+
+<div class="quiz">Quiz 2 - Conjugaison</div>
+
+<div class="quiz">Quiz 3 - Orthographe</div>
+
+<div class="quiz">Quiz 4 - Vocabulaire</div>
+
+<div class="quiz">Quiz 5 - Littérature</div>
+
+</div>
+
+<a
+class="whatsapp"
+href="https://wa.me/50947052718"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a
+class="tiktok"
+href="https://www.tiktok.com"
+target="_blank">
+
+<i class="fab fa-tiktok"></i>
+
+</a>
+
+<script>
+
+function showMatiere(id){
+
+let sections=document.querySelectorAll('.matiere');
+
+sections.forEach(section=>{
+section.style.display='none';
+});
+
+document.getElementById(id).style.display='block';
+
+}
+
+</script>
+
+</body>
+</html>
