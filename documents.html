@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Documents - Djouby Quiz</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#0057B8;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.menu{
+text-align:center;
+padding:20px;
+}
+
+.menu button{
+background:#D62828;
+color:white;
+border:none;
+padding:15px 25px;
+margin:6px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+.matiere{
+display:none;
+background:white;
+max-width:900px;
+margin:20px auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+.document{
+background:#f8f8f8;
+padding:15px;
+margin:10px 0;
+border-radius:8px;
+}
+
+.retour{
+display:inline-block;
+margin:20px;
+background:#0057B8;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:8px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:38px;
+color:white;
+text-decoration:none;
+z-index:999;
+}
+
+.tiktok{
+position:fixed;
+bottom:100px;
+right:20px;
+width:70px;
+height:70px;
+background:black;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:35px;
+color:white;
+text-decoration:none;
+z-index:999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>DJOUBY DOCUMENTS</h1>
+
+<p>Choisissez une matière</p>
+
+</header>
+
+<a href="index.html" class="retour">
+← Retour Accueil
+</a>
+
+<div class="menu">
+
+<button onclick="showDoc('maths')">Mathématiques</button>
+
+<button onclick="showDoc('physique')">Physique</button>
+
+<button onclick="showDoc('chimie')">Chimie</button>
+
+<button onclick="showDoc('anglais')">Anglais</button>
+
+<button onclick="showDoc('espagnol')">Espagnol</button>
+
+<button onclick="showDoc('francais')">Français</button>
+
+</div>
+
+<div id="maths" class="matiere">
+
+<h2>Documents Mathématiques</h2>
+
+<div class="document">Algèbre Générale.pdf</div>
+
+<div class="document">Analyse Mathématique.pdf</div>
+
+<div class="document">Géométrie.pdf</div>
+
+<div class="document">Probabilités.pdf</div>
+
+<div class="document">Trigonométrie.pdf</div>
+
+</div>
+
+<div id="physique" class="matiere">
+
+<h2>Documents Physique</h2>
+
+<div class="document">Mécanique.pdf</div>
+
+<div class="document">Électricité.pdf</div>
+
+<div class="document">Thermodynamique.pdf</div>
+
+<div class="document">Ondes.pdf</div>
+
+<div class="document">Physique Moderne.pdf</div>
+
+</div>
+
+<div id="chimie" class="matiere">
+
+<h2>Documents Chimie</h2>
+
+<div class="document">Atomistique.pdf</div>
+
+<div class="document">Chimie Organique.pdf</div>
+
+<div class="document">Acides et Bases.pdf</div>
+
+<div class="document">Réactions Chimiques.pdf</div>
+
+<div class="document">Solutions.pdf</div>
+
+</div>
+
+<div id="anglais" class="matiere">
+
+<h2>Documents Anglais</h2>
+
+<div class="document">Grammar.pdf</div>
+
+<div class="document">Vocabulary.pdf</div>
+
+<div class="document">Reading.pdf</div>
+
+<div class="document">Writing.pdf</div>
+
+<div class="document">Exercises.pdf</div>
+
+</div>
+
+<div id="espagnol" class="matiere">
+
+<h2>Documents Espagnol</h2>
+
+<div class="document">Gramática.pdf</div>
+
+<div class="document">Verbos.pdf</div>
+
+<div class="document">Lectura.pdf</div>
+
+<div class="document">Escritura.pdf</div>
+
+<div class="document">Ejercicios.pdf</div>
+
+</div>
+
+<div id="francais" class="matiere">
+
+<h2>Documents Français</h2>
+
+<div class="document">Grammaire.pdf</div>
+
+<div class="document">Conjugaison.pdf</div>
+
+<div class="document">Orthographe.pdf</div>
+
+<div class="document">Vocabulaire.pdf</div>
+
+<div class="document">Littérature.pdf</div>
+
+</div>
+
+<a class="whatsapp"
+href="https://wa.me/50947052718"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a class="tiktok"
+href="https://www.tiktok.com"
+target="_blank">
+
+<i class="fab fa-tiktok"></i>
+
+</a>
+
+<script>
+
+function showDoc(id){
+
+let sections=document.querySelectorAll('.matiere');
+
+sections.forEach(section=>{
+section.style.display='none';
+});
+
+document.getElementById(id).style.display='block';
+
+}
+
+</script>
+
+</body>
+</html>
